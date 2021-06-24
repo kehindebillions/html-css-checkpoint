@@ -1,56 +1,166 @@
-body { font-family: 'Roboto', sans-serif;;
     
-    color: brown;
-    background-color: rgba(193, 193, 221, 0.281);
-    
+*, :after, :before {
+    box-sizing: inherit;
+}
+html {
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    padding-top: 70px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 50px;
+}
+/*nav*/
 
+.main-header {
+
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    top: 0;
+    left: 0;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s;
+}
+.navlist { display: flex;
 }
 
-a {color: teal;
-    font-size: 40px;
-    text-decoration:none;
-    text-transform:lowercase;
-    margin:80px;
-    border-top:rgba(193, 193, 221, 0.281)
+.navlist li{ 
+    list-style: none;
+    align-content: space-around;
 }
-h1 { 
-    font-size:100px;
+ .navlist li a {
+     padding-top: inherit;
+     text-decoration: none;
+     justify-content: space-evenly;
+     margin-right: 10px;
+     
+ }
+ .dropdown{
+     cursor: pointer;
+ }
+ .navlist li .dropdown {
+     display: block;
+     background: ivory;
+     cursor: pointer;
+ }
+ .dropdown ul {
+     display: none;
+     color:#ababab;
+    padding-top: 10px;
+    position: absolute;
+    min-width: 220px;
+    margin-left: -100px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    z-index: 1;
+}
+.dropdown:hover.dropdown ul {
+    display: inline;
+    background-color: ivory ;
+    box-sizing:content-box ;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+section .header {
+    display: flex;
+    color:#00b39b;
+    font-size: 3rem;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+article {
+    display: flex;
+    font-size: 2em;
+    font-weight: 500;
+}
+.middle { font-size: 1em;
+    display: flex;
+    vertical-align: middle;
+    border: 0;
+    text-align: center;
+    padding: 100px;
+    -ms-flex-item-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.middle .blue {
+    background-color: #00ccb1;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.middle .red {
+    background: #3d83df;
+    border-color: black;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.middle .black {
+    background: #1b2734;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.template {
+    display: flex;
+}
+.template .template1 {
+    color: #00b39b;
+    float: left;
     width: 100px;
-    height: 0spx;
-   background: hotpink;
+    padding-right: 1em;
+}
+.template .template2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0;
+    width: 67%;
+    list-style: none;
+}
+
+
 
 }
-img {
-    width: 50vw;
-    height: 100vh; 
-}
-section {
-    color: indigo;
-    background: lightcoral;
-}
-.two  {
-    font-size: 20px;
-    align-self:right;
-    text-align: left;
-    padding:20px ;
-    border-top: khaki;
-    margin:10px;
-    background-color: rgb(255, 71, 194);
-}
-input{
-    font-size: 100px;
-    height: 20px;
-    background-color: violet;
-}
-textarea { font-size: 50px;
-}
-button {font-size: inherit;
-font-family: sans-serif;
-color: red;
-background-color: rgb(255, 71, 194); 
-font-style: italic;
-}
-footer {
-    font-size: 30px;
-    font-weight:700;
-}
+
+
+/*.section__inner {
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}*/
+
+
+
